@@ -1,0 +1,113 @@
+/*
+	HEADER
+*/
+
+.header-page {
+	position: fixed;
+	width: 100%;
+	z-index: 9;
+	background: white;
+	text-align: center;
+	padding: 13px 0;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+	h1 {
+		font-size: 1.5em;
+		margin: 0;
+		font-weight: 300;
+
+		img {
+			max-width: 23px;
+			margin-right: 10px;
+		}
+
+	}
+}
+
+
+
+/*
+	HERO_HOME
+*/
+
+.color-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	// background: rgba(103,58,183,.9);
+	background: rgba(0,0,0,.5);
+}
+
+.hero-home {
+	position: relative;
+	padding-top: 80px;
+	background: url(../assets/images/bghero.jpg) center;
+	background-size: cover;
+	color: white;
+	text-align: center;
+
+	.mdl-button {
+		margin-top: 40px;
+		background: $color-p;
+		color: white;
+		font-weight: 400;
+		// transform: scale(1.1);
+	}
+}
+
+.content-hero-home {
+	padding: 120px 0;
+}
+
+.title-hero {
+	margin-bottom: 25px;
+	font-size: 4.4em;
+	font-weight: 500;
+	line-height: 1.3;
+}
+
+.description {
+	margin: 70px auto 0 auto;
+	max-width: 600px;
+
+	p {
+		font-size: 1.3em;
+		font-weight: 300;
+	}
+}
+
+
+
+/*
+	CONTACT
+*/
+
+.contact {
+	background: $color-p;
+	text-align: center;
+	padding: 30px 0;
+	color: white;
+
+	h3 {
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	ul {
+		margin: 45px 0 20px 0;
+		padding-left: 0;
+		li {
+			display: inline-block;
+			margin: 0 15px;
+
+			a {
+				color: white;
+				text-decoration: none;
+				font-size: 1.2em;
+			}
+		}
+	}
+}
