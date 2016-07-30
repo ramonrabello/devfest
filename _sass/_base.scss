@@ -2,7 +2,8 @@
 	VARS
 */
 
-$color-p: #673AB7;
+$color-p: #5C6BC0;
+$color-s: #FFC10D;
 
 
 
@@ -10,15 +11,68 @@ $color-p: #673AB7;
 	GRID
 */
 
-
 .container {
 	position: relative;
 	margin: 0 auto;
 	max-width: 1170px;
-	padding: 0 15px;
+}
+
+.mdl-grid {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.mdl-cell {
+	margin-top: 0;
+	margin-bottom: 0;
+	position: relative;
 }
 
 
+
+/*
+ * GENERAL
+*/
+
 body {
 	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-size: 1.1em;
+}
+
+
+
+// responsive 
+
+@media (min-width: 840px) {
+	.no-margin-right {
+		margin-right: 0px;
+	}
+
+	.no-margin-left {
+		margin-left: 0px;
+	}
+
+	.contact-section {
+		.mdl-cell--12-col {
+			width: calc(100% - 32px);
+		}	
+	}
+}
+
+@media (max-width: 839px) {
+	.main-menu {
+		ul {
+			padding-left: 0;
+			text-align: left !important;
+
+			li {
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
 }
